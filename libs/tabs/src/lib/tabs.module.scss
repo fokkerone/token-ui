@@ -1,0 +1,66 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.Root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 2px 10px var(--global-color-brand-300);
+}
+
+.List {
+    flex-shrink: 0;
+    display: flex;
+    border-bottom: 1px solid var(--global-color-brand-700);
+}
+
+.Trigger {
+    font-family: inherit;
+    background-color: white;
+    padding: 0 20px;
+    height: 45px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1;
+    color: var(--global-color-brand-700);
+    user-select: none;
+
+    &:first-child {
+        border-top-left-radius: 6px;
+    }
+    &:last-child {
+        border-top-right-radius: 6px;
+    }
+    &:hover {
+        color: var(--global-color-brand-500);
+    }
+    &[data-state="active"] {
+        color: var(--violet11);
+        box-shadow: inset 0 -1px 0 0 currentColor, 0 1px 0 0 currentColor;
+    }
+    &:focus {
+        position: relative;
+        box-shadow: 0 0 0 2px black;
+    }
+}
+
+.Content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    outline: none;
+
+    &:focus {
+        box-shadow: 0 0 0 2px black;
+    }
+}

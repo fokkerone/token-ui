@@ -1,0 +1,24 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import * as Popover from './popover';
+
+<Meta title="Popover" component={Popover} />
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <Popover.Root>
+      <Popover.Trigger asChild>
+        <button>asdsdas</button>
+      </Popover.Trigger>
+      <Popover.Portal>
+        <Popover.Content>asdfsdfsd</Popover.Content>
+      </Popover.Portal>
+    </Popover.Root>
+  </Story>
+</Canvas>

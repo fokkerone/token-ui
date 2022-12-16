@@ -1,0 +1,82 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.Root {
+    display: inline-block;
+    flex-direction: column;
+    width: 500px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.List {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    position: relative;
+    box-sizing: border-box;
+    // border-bottom: 1px solid var(--global-color-brand-700);
+}
+
+.Trigger {
+    all: unset;
+    font-family: inherit;
+    background-color: white;
+    padding: 0 12px;
+    height: 45px;
+
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1;
+    color: var(--global-color-brand-300);
+    user-select: none;
+
+    &:first-child {
+        // border-top-left-radius: 6px;
+    }
+    &:last-child {
+        // border-top-right-radius: 6px;
+    }
+    &:hover {
+        color: var(--global-color-brand-500);
+    }
+    &[data-state="active"] {
+        color: var(--violet11);
+        // box-shadow: inset 0 -1px 0 0 currentColor, 0 1px 0 0 currentColor;
+    }
+    &:focus {
+        //position: relative;
+        // box-shadow: 0 0 0 2px black;
+    }
+}
+
+.triggerline {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    width: 50%;
+    background-color: rgb(255, 63, 166);
+    left: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.Content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    outline: none;
+
+    &:focus {
+        // box-shadow: 0 0 0 2px black;
+    }
+}

@@ -1,0 +1,208 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import Dummy from './dummy';
+import Row from './row';
+import Col from './col';
+
+<Meta title="Flex" component={Dummy} />
+
+# Flex-Grid
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <Row>
+      <Col>
+        <Dummy>1</Dummy>
+      </Col>
+      <Col>
+        <Dummy>1</Dummy>
+      </Col>
+      <Col>
+        <Dummy>1</Dummy>
+      </Col>
+    </Row>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Maisn">
+    <Row>
+      <Col xs={12} sm={6} md={4} lg={3}>
+        <Dummy>12,6,3</Dummy>
+      </Col>
+      <Col xs={12} sm={6} md={4} lg={3}>
+        <Dummy>12,6,3</Dummy>
+      </Col>
+      <Col xs={12} sm={6} md={4} lg={3}>
+        <Dummy>12,6,3</Dummy>
+      </Col>
+      <Col xs={12} sm={6} md={4} lg={3}>
+        <Dummy>12,6,3</Dummy>
+      </Col>
+    </Row>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Offset">
+    <div>
+      <Row>
+        <Col offsetXs={10} xs={2}>
+          <Dummy>2</Dummy>
+        </Col>
+        <Col offsetXs={8} xs={4}>
+          <Dummy>2</Dummy>
+        </Col>
+        <Col offsetXs={6} xs={6}>
+          <Dummy>2</Dummy>
+        </Col>
+        <Col offsetXs={4} xs={8}>
+          <Dummy>8-4</Dummy>
+        </Col>
+        <Col offsetXs={2} xs={10}>
+          <Dummy>8-4</Dummy>
+        </Col>
+        <Col xs={12}>
+          <Dummy>8-4</Dummy>
+        </Col>
+      </Row>
+    </div>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Auto Width">
+    <div>
+      <Row>
+        <Col>
+          <Dummy>2</Dummy>
+        </Col>
+        <Col>
+          <Dummy>2</Dummy>
+        </Col>
+        <Col>
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+    </div>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Alignment">
+    <div>
+      <Row>
+        <Col xs="6">
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+      <Row alignXs="center">
+        <Col xs="6">
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+      <Row alignXs="end">
+        <Col xs="6">
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+      <Row alignXs="center" alignSm="end" alignMd="start">
+        <Col xs="6">
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+    </div>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Vertical">
+    <div>
+      <Row
+        verticalXs="top"
+        style={{ border: '1px solid green', height: '100px' }}
+      >
+        <Col>
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+      <Row
+        verticalXs="middle"
+        style={{ border: '1px solid green', height: '100px' }}
+      >
+        <Col>
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+      <Row
+        verticalXs="bottom"
+        style={{ border: '1px solid green', height: '100px' }}
+      >
+        <Col>
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+    </div>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Distribution">
+    <div>
+      Between
+      <Row
+        verticalXs="top"
+        distributionXs="between"
+        style={{ border: '1px solid green', height: '100px' }}
+      >
+        <Col xs="2">
+          <Dummy>2</Dummy>
+        </Col>
+        <Col xs="2">
+          <Dummy>2</Dummy>
+        </Col>
+        <Col xs="2">
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+      <p>Around</p>
+      <Row
+        verticalXs="top"
+        distributionXs="around"
+        style={{ border: '1px solid green', height: '100px' }}
+      >
+        <Col xs="2">
+          <Dummy>2</Dummy>
+        </Col>
+        <Col xs="2">
+          <Dummy>2</Dummy>
+        </Col>
+        <Col xs="2">
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+      <p>Mixed</p>
+      <Row
+        verticalXs="top"
+        distributionXs="around"
+        verticalSm="middle"
+        distributionSm="between"
+        style={{ border: '1px solid green', height: '100px' }}
+      >
+        <Col xs="2">
+          <Dummy>2</Dummy>
+        </Col>
+        <Col xs="2">
+          <Dummy>2</Dummy>
+        </Col>
+        <Col xs="2">
+          <Dummy>2</Dummy>
+        </Col>
+      </Row>
+    </div>
+  </Story>
+</Canvas>

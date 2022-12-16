@@ -1,0 +1,28 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+@mixin px($value) {
+
+  
+    padding-left: var(--spacing-global-12);
+    padding-right: var(--spacing-global-12);
+  }
+
+.Root{
+    // Reset
+  boxSizing: 'border-box';
+  flexShrink: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include px(34);
+
+  border: 1px solid green;
+ 
+}

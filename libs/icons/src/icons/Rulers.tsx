@@ -1,0 +1,16 @@
+
+
+import React from 'react';
+
+import IconBase, {IconProps} from '../icon';
+
+
+const Icon:React.FC<IconProps> = (props: IconProps) => {
+  return (
+    <IconBase {...props}>
+      <path d="M1.5 0C1.10218 0 0.720644 0.158035 0.43934 0.43934C0.158035 0.720644 0 1.10218 0 1.5L0 22.5C0 22.8978 0.158035 23.2794 0.43934 23.5607C0.720644 23.842 1.10218 24 1.5 24H9V22.5H3V21H9V19.5H6V18H9V16.5H3V15H9V13.5H6V12H9V10.5H3V9H9V3H10.5V9H12V6H13.5V9H15V3H16.5V9H18V6H19.5V9H21V3H22.5V9H24V1.5C24 1.10218 23.842 0.720644 23.5607 0.43934C23.2794 0.158035 22.8978 0 22.5 0L1.5 0Z" fill="black" />
+    </IconBase>
+  );
+};
+
+export default Icon

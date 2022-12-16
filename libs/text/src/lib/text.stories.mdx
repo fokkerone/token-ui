@@ -1,0 +1,35 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import Text from './text';
+
+<Meta title="Text" component={Text} />
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <div>
+      <Text size="9">The quick brown fox jumped over the lazy dog.</Text>
+      <Text size="9" as="h1">
+        The quick brown fox jumped over the lazy dog.
+      </Text>
+      <Text size="1" as="h1">
+        The quick brown fox jumped over the lazy dog.
+      </Text>
+      <Text size="3" as="h1">
+        The quick brown fox jumped over the lazy dog.
+      </Text>
+      <Text size="4" as="i">
+        The quick brown fox jumped over the lazy dog.
+      </Text>
+      <Text size="5" as="h2">
+        The quick brown fox jumped over the lazy dog.
+      </Text>
+      <Text size="6">The quick brown fox jumped over the lazy dog.</Text>
+    </div>
+  </Story>
+</Canvas>

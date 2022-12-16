@@ -1,0 +1,83 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.root {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    z-index: 1;
+    font-family: var(--font-family-default);
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 6px;
+    list-style: none;
+    margin: 0;
+}
+.item {
+    // position: relative;
+}
+.indicator {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 10px;
+    top: 100%;
+    overflow: hidden;
+    z-index: 1;
+
+    transition: width, transform 250ms ease;
+    &[data-state="visible"] {
+        animation: fadeIn 200ms ease;
+    }
+    &[data-state="hidden"] {
+        animation: fadeOut 200ms ease;
+    }
+
+    background-color: grey;
+    height: 2px;
+    transition: width, transform, 250ms ease;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-duration: 250ms;
+    animation-timing-function: ease;
+}
+
+.trigger {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    font-family: var(--sans);
+    padding: 8px 12px;
+    outline: none;
+    user-select: none;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--global-color-brand-400);
+
+    &:focus,
+    .NavigationMenuLink:focus {
+        box-shadow: 0 0 0 2px var(--global-color-brand-200);
+    }
+    &:hover {
+        background-color: var(--global-color-brand-500);
+    }
+}

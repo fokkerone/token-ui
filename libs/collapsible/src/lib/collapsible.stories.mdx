@@ -1,0 +1,53 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import * as Collapsible from './collapsible';
+import * as CollapsibleBase from '@radix-ui/react-collapsible';
+
+<Meta title="Collapsible" component={Collapsible} />
+
+export const Demo = () => {
+  const [open, setOpen] = React.useState(false);
+  return (
+    <Collapsible.Root open={open} onOpenChange={setOpen}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          backgroundColor: 'pink',
+        }}
+      >
+        <span className="Text" style={{ color: '#c30' }}>
+          @peduarte starred 3 repositories
+        </span>
+        <Collapsible.Trigger asChild>
+          <button className="IconButton">
+            {open ? <>open</> : <>close</>}
+          </button>
+        </Collapsible.Trigger>
+      </div>
+      <div className="Repository">
+        <span className="Text">@radix-ui/primitives</span>
+      </div>
+      <Collapsible.Content>
+        <div className="Repository">
+          <span className="Text">@radix-ui/primitives</span>
+        </div>
+        <div className="Repository">
+          <span className="Text">@radix-ui/primitives</span>
+        </div>
+      </Collapsible.Content>
+    </Collapsible.Root>
+  );
+};
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <Demo />
+  </Story>
+</Canvas>

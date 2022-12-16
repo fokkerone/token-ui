@@ -1,0 +1,34 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { App } from '@tokenui/icons';
+import * as Toolbar from './toolbar';
+
+<Meta title="Toolbar" component={Toolbar} />
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Anatomy">
+    <Toolbar.Root>
+      <Toolbar.Button />
+      <Toolbar.Separator />
+      <Toolbar.Link>Link</Toolbar.Link>
+      <Toolbar.Link>mitte</Toolbar.Link>
+      <Toolbar.Link>recht</Toolbar.Link>
+      <Toolbar.ToggleGroup type="multiple">
+        <Toolbar.ToggleItem>
+          <App />
+        </Toolbar.ToggleItem>
+        <Toolbar.ToggleItem>
+          <App />
+        </Toolbar.ToggleItem>
+        <Toolbar.ToggleItem>
+          <App />
+        </Toolbar.ToggleItem>
+      </Toolbar.ToggleGroup>
+    </Toolbar.Root>
+  </Story>
+</Canvas>

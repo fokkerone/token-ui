@@ -1,0 +1,48 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import { TabsRoot, TabsList, TabsTrigger, TabsContent } from './tabs';
+import * as TabLines from './tablines';
+
+<Meta title="Tabs" component={TabsRoot} />
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <TabsRoot>
+      <TabsList>
+        <TabsTrigger value="tab1">Account</TabsTrigger>
+        <TabsTrigger value="tab2">Eumel Geumel</TabsTrigger>
+      </TabsList>
+      <TabsContent value="tab1">
+        Lorem ipsum dolor sit amet, consectetur
+      </TabsContent>
+      <TabsContent value="tab2">
+        Eumel Geumel Tabs lorem Lorem ipsum dolor sit amet, consectetur
+      </TabsContent>
+    </TabsRoot>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Lines">
+    <TabLines.TabsRoot>
+      <TabLines.TabsList>
+        <TabLines.TabsTrigger value="tab1">Account</TabLines.TabsTrigger>
+        <TabLines.TabsTrigger value="tab2">Eumel Geumel</TabLines.TabsTrigger>
+        <TabLines.TabsTrigger value="tab3">Beumel</TabLines.TabsTrigger>
+        <TabLines.TabsTrigger value="tab4">skubschn</TabLines.TabsTrigger>
+      </TabLines.TabsList>
+      <TabLines.TabsContent value="tab1">
+        Lorem ipsum dolor sit amet, consectetur
+      </TabLines.TabsContent>
+      <TabLines.TabsContent value="tab2">
+        Eumel Geumel Tabs lorem Lorem ipsum dolor sit amet, consectetur
+      </TabLines.TabsContent>
+    </TabLines.TabsRoot>
+  </Story>
+</Canvas>

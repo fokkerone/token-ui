@@ -1,0 +1,25 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import TextField from './textfield';
+import Label from '@tokenui/label';
+<Meta title="TextField" component={TextField} />;
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <div>
+      <TextField placeholder="Placeholder" />
+      <TextField placeholder="Placeholder" size="large" />
+      <TextField placeholder="Placeholder" size="huge" />
+      <div>
+        <Label>Label Label</Label>
+        <TextField placeholder="Placeholder" size="large" />
+      </div>
+    </div>
+  </Story>
+</Canvas>

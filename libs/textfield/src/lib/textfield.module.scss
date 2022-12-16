@@ -1,0 +1,66 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+@import "../../../styles/mixins/index";
+
+.base {
+    /** RESET Defaults*/
+    all: unset;
+    appearance: none;
+
+    flex: 1 1 0%;
+    width: 100%;
+
+    @include py(0.45rem);
+    @include px(0.5rem);
+    margin: 0;
+    box-sizing: border-box;
+
+    border-radius: calc(var(--radii-md) * 1px);
+
+    @include FontDefault;
+    font-size: 0.75rem;
+    line-height: 1;
+
+    background-color: var(--global-color-brand-100);
+    color: var(--global-color-brand-400);
+    border: 1px solid var(--global-color-brand-200);
+
+    &:focus {
+        outline: 2px solid var(--global-color-brand-500);
+        outline-offset: -1px;
+        border-color: transparent;
+    }
+
+    &::placeholder {
+        color: var(--global-color-brand-200);
+    }
+
+    &.large {
+        @include py(0.5rem);
+        @include px(0.75rem);
+        font-size: 1rem;
+    }
+
+    &.huge {
+        @include py(0.75rem);
+        @include px(1rem);
+        font-size: 1.25rem;
+        outline-width: 3px;
+        outline-offset: -1px;
+        border-radius: 5px;
+    }
+
+    &.pill {
+        border-radius: 22222px;
+    }
+}
+
+.container {
+    position: relative;
+}

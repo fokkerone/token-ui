@@ -1,0 +1,62 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+@import "../../../styles/mixins/index";
+
+// Reset the container
+.root {
+    font-family: var(--global-fontfamily-sans);
+    @include font-size(24, 32);
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+    display: block;
+
+    + h1 {
+        // font-weight: var(--sans-light);
+        font-weight: 200;
+        color: var(--global-color-brand-500);
+        @include font-size(24, 32);
+    }
+
+    + h2 {
+        // font-weight: var(--sans-light);
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 1.1;
+        color: var(--global-color-shamrockgreen400);
+    }
+
+    &.size-1 {
+        font-size: 1rem;
+
+        + h1 {
+            font-size: 3rem;
+            color: red;
+        }
+    }
+
+    &.size-2 {
+        font-size: 1.25rem;
+    }
+
+    &.size-3 {
+        font-size: 1.5rem;
+    }
+
+    &.size-8 {
+        font-size: 3rem;
+        letter-spacing: -0.055em;
+        text-indent: -0.025em;
+    }
+
+    &.size-9 {
+        font-size: 4rem;
+        letter-spacing: -0.055em;
+        text-indent: -0.025em;
+    }
+}

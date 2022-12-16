@@ -1,0 +1,24 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import Status from './status';
+
+<Meta title="Status" component={Status} />
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <div>
+      <Status style={{ margin: '2px' }} />
+      <Status status="alert" size="lg" style={{ margin: '2px' }} />
+      <Status style={{ margin: '2px' }} />
+      <Status style={{ margin: '2px' }} />
+      <Status style={{ margin: '2px' }} />
+      <Status style={{ margin: '2px' }} />
+    </div>
+  </Story>
+</Canvas>

@@ -1,0 +1,49 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import Heading from './heading';
+import { Text } from '@tokenui/text';
+
+<Meta title="Typography" component={Heading} />
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <div>
+      <Heading>Lorem IpZCfs dfg dfg d</Heading>
+      <Heading as="h2">Lorem IpZCfs dfg dfg d</Heading>
+      <Heading as="h3">Lorem afjkasdfsdf</Heading>
+      <Heading as="h4">Lorem afjkasdfsdf</Heading>
+      <Heading as="h5">Lorem afjkasdfsdf</Heading>
+      <Heading as="h6">Lorem afjkasdfsdf</Heading>
+      <Text size="1">
+        This is a Paragraph size 1. A really long paragraph of text, to
+        demonstrate prose text, like for example, the kind you might read in a
+        blog post. The reason we're using prose here is because the most common
+        use case for this container size is longform text. So we're previewing
+        some longform text here so we can make sure the container width provides
+        an optimal line length for this font size
+      </Text>
+      <Text size="2">
+        This is a Paragraph size 1. A really long paragraph of text, to
+        demonstrate prose text, like for example, the kind you might read in a
+        blog post. The reason we're using prose here is because the most common
+        use case for this container size is longform text. So we're previewing
+        some longform text here so we can make sure the container width provides
+        an optimal line length for this font size
+      </Text>
+      <Text size="3">
+        This is a Paragraph size 1. A really long paragraph of text, to
+        demonstrate prose text, like for example, the kind you might read in a
+        blog post. The reason we're using prose here is because the most common
+        use case for this container size is longform text. So we're previewing
+        some longform text here so we can make sure the container width provides
+        an optimal line length for this font size
+      </Text>
+    </div>
+  </Story>
+</Canvas>

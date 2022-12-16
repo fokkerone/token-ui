@@ -1,0 +1,32 @@
+<%
+var figma_tokens = {}
+
+_.each(allTokens, function(prop) {
+
+   
+    if (prop.type == undefined) prop.type = "unsorted"
+    if (!figma_tokens[prop.type]) figma_tokens[prop.type] = {}
+
+
+
+    if(typeof(prop.value) === 'object' ){
+        _.forIn( prop.value, function(value, key) {
+            console.log(value)
+            figma_tokens[prop.type][`${prop.name}-${key}`]  =  parseInt(value) || value
+          });
+        
+    }else{
+        figma_tokens[prop.type][prop.name]  = prop.value
+    }
+   
+});
+const isNum = function (p) {
+    return (Number.isNaN(p *1) ) ? false : true
+}
+%>
+<% _.each(figma_tokens, function(prop, index) { %>
+<% _.each(prop, function(sub, index) { %>
+$<%=index %>: <% if (isNum(sub)){ %><%=sub %><% }else{ %>"<%=sub %>" <% }%>, <% }); 
+%>
+// <%=index %>
+<% }); %>

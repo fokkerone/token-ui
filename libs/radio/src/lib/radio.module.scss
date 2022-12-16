@@ -1,0 +1,39 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.root {
+    all: unset;
+    box-sizing: border-box;
+
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    color: var(--global-color-semantic-alert);
+    box-shadow: inset 0 0 0 1px var(--global-color-semantic-state-hover-alert);
+    overflow: hidden;
+    height: 24px;
+    width: 24px;
+}
+
+.indicator {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}

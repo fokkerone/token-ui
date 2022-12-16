@@ -1,0 +1,38 @@
+<%
+var figma_tokens = {}
+
+_.each(allTokens, function(prop) {
+
+   
+
+    if (prop.type == undefined) prop.type = "unsorted"
+    if (!figma_tokens[prop.type]) figma_tokens[prop.type] = {}
+
+
+
+    if(typeof(prop.value) === 'object' ){
+        _.forIn( prop.value, function(value, key) {
+            figma_tokens[prop.type][`${prop.name}_${key.toUpperCase()}`]  =  parseInt(value) || value
+          });
+        
+    }else{
+        figma_tokens[prop.type][prop.name]  = prop.value
+    }
+   
+});
+
+const isNum = function (p) {
+    return (Number.isNaN(p *1) ) ? false : true
+}
+%>
+
+const Tokens = {
+    <% _.each(figma_tokens, function(prop, index) { %>
+        "<%= index %>" : {<% _.each(prop, function(sub, index) { %>
+                <%=index %>: <% if (isNum(sub)){ %><%=sub %><% }else{ %>"<%=sub %>" <% } %>, <% }); 
+             %>
+        },
+    <% }); %>
+} 
+
+export default Tokens

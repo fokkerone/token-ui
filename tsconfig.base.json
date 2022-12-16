@@ -14,7 +14,37 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tokenui": ["libs/lib/ui/src/index.ts"],
+      "@tokenui/accordion": ["libs/accordion/src/index.ts"],
+      "@tokenui/aspect_ratio": ["libs/aspect-ratio/src/index.ts"],
+      "@tokenui/badge": ["libs/badge/src/index.ts"],
+      "@tokenui/breadcrumb": ["libs/breadcrumb/src/index.ts"],
+      "@tokenui/button": ["libs/button/src/index.ts"],
+      "@tokenui/checkbox": ["libs/checkbox/src/index.ts"],
+      "@tokenui/collapsible": ["libs/collapsible/src/index.ts"],
+      "@tokenui/container": ["libs/container/src/index.ts"],
+      "@tokenui/flex": ["libs/flex/src/index.ts"],
+      "@tokenui/heading": ["libs/heading/src/index.ts"],
+      "@tokenui/icons": ["libs/icons/src/index.ts"],
+      "@tokenui/label": ["libs/label/src/index.ts"],
+      "@tokenui/navigationmenu": ["libs/navigation-menu/src/index.ts"],
+      "@tokenui/popover": ["libs/popover/src/index.ts"],
+      "@tokenui/progress": ["libs/progress/src/index.ts"],
+      "@tokenui/radio": ["libs/radio/src/index.ts"],
+      "@tokenui/section": ["libs/section/src/index.ts"],
+      "@tokenui/slider": ["libs/slider/src/index.ts"],
+      "@tokenui/status": ["libs/status/src/index.ts"],
+      "@tokenui/styles": ["libs/styles/src/tokens/variables.css"],
+      "@tokenui/switch": ["libs/switch/src/index.ts"],
+      "@tokenui/tabs": ["libs/tabs/src/index.ts"],
+      "@tokenui/text": ["libs/text/src/index.ts"],
+      "@tokenui/textfield": ["libs/textfield/src/index.ts"],
+      "@tokenui/toggle": ["libs/toggle/src/index.ts"],
+      "@tokenui/toggle-group": ["libs/toggle-group/src/index.ts"],
+      "@tokenui/toolbar": ["libs/toolbar/src/index.ts"],
+      "@tokenui/tooltip": ["libs/tooltip/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

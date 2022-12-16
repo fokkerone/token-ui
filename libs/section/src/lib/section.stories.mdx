@@ -1,0 +1,28 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import Section from './section';
+
+<Meta title="Section" component={Section} />
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <Section size={1} style={{ marginTop: '4px', textAlign: 'center' }}>
+      1
+    </Section>
+    <Section size="2" className="forjens" style={{ marginTop: '14px', textAlign: 'center' }}>
+      2
+    </Section>
+    <Section size="3" style={{ marginTop: '4px', textAlign: 'center' }}>
+      3
+    </Section>
+    <Section size="4" style={{ marginTop: '4px', textAlign: 'center' }}>
+      4
+    </Section>
+  </Story>
+</Canvas>

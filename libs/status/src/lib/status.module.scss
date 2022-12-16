@@ -1,0 +1,41 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+@import "../../../styles/mixins/index";
+
+.root {
+    display: inline-flex;
+    border-radius: 50%;
+    flex-shrink: 0;
+    @include size(12px);
+    background-color: #666;
+
+    .size-xs {
+        @include size(5px);
+    }
+
+    .size-sm {
+        @include size(10px);
+    }
+
+    &.size-lg {
+        @include size(15px);
+    }
+
+    .status-alert {
+        background-color: red;
+    }
+
+    .status-warning {
+        background-color: yellow;
+    }
+
+    .status-success {
+        background-color: green;
+    }
+}

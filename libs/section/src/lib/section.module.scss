@@ -1,0 +1,45 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+// Mixins
+@import "../../../styles/mixins/index";
+
+.root {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    background-color: rgb(209, 193, 172);
+
+    &:before {
+        box-sizing: border-box;
+        content: " ";
+    }
+    &:after {
+        box-sizing: border-box;
+        content: " ";
+    }
+
+    &.size-1 {
+        @include py(var(--spacing-global-6));
+    }
+
+    &.size-2 {
+        @include py(var(--spacing-global-12));
+    }
+
+    &.size-3 {
+        @include py(var(--spacing-global-24));
+    }
+
+    &.size-4 {
+        @include py(var(--spacing-global-32));
+    }
+
+    &.size-5 {
+        @include py(var(--spacing-global-64));
+    }
+}

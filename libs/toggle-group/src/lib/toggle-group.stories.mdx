@@ -1,0 +1,31 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import ToggleGroup, { ToggleGroupItem } from './toggle-group';
+
+<Meta title="Toggle Group" component={ToggleGroup} />
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <ToggleGroup
+      type="single"
+      defaultValue="center"
+      aria-label="Text alignment"
+    >
+      <ToggleGroupItem value="left" aria-label="Left aligned">
+        A
+      </ToggleGroupItem>
+      <ToggleGroupItem value="center" aria-label="Center aligned">
+        B
+      </ToggleGroupItem>
+      <ToggleGroupItem value="right" aria-label="Right aligned">
+        C
+      </ToggleGroupItem>
+    </ToggleGroup>
+  </Story>
+</Canvas>

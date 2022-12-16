@@ -1,0 +1,57 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+@import "../../../styles/mixins/index";
+@import "../../../styles/src/tokens/variables";
+
+.root {
+    @extend %breadcrumb;
+
+    all: unset;
+    @include FontSizeSmall;
+    font-family: var(--breadcrumb-font);
+    font-size: var(--breadcrumb-font-size);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    min-height: min-content;
+
+    list-style: none;
+    @include py(0.125rem);
+    @include px(0.125rem);
+    background-color: var(--global-color-brand-500);
+}
+
+.crumb {
+    display: inline-flex;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+    }
+    a:visited {
+        color: #fff;
+    }
+    @include px(4px);
+
+    p {
+        font-weight: 600;
+    }
+
+    a {
+        &:hover {
+            color: pink;
+        }
+    }
+}
+.divider {
+    display: inline-flex;
+    align-items: center;
+    @include px(0.5rem);
+    font-size: 12px;
+}

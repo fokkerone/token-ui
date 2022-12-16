@@ -1,0 +1,51 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+@import "../../../styles/mixins/index";
+
+.root {
+    align-items: center;
+    appearance: none;
+    border-width: 0;
+
+    box-sizing: border-box;
+    display: inline-flex;
+    font-family: inherit;
+    flex-shrink: 0;
+    justify-content: center;
+    line-height: 1;
+    vertical-align: middle;
+    outline: none;
+    user-select: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: calc(var(--border-radius-100) * 1px);
+    background-color: var(--global-color-brand-200);
+    color: var(--global-color-brand-700);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+
+    @include px(0.5rem);
+    @include py(0.25rem);
+
+    &:disabled {
+        background-color: var(--global-color-brand-200);
+        pointer-events: none;
+        color: var(--global-color-brand-400);
+    }
+
+    &:before {
+        box-sizing: border-box;
+        content: "";
+    }
+
+    &:after {
+        box-sizing: border-box;
+        content: "";
+    }
+}

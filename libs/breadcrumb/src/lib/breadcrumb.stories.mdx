@@ -1,0 +1,27 @@
+<!-- Label.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import * as Breadcrumb from './breadcrumb';
+
+<Meta title="Breadcrumb" component={Breadcrumb.Root} />
+
+# Label
+
+With `MDX`, we can define a story for `Label` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="Main">
+    <Breadcrumb.Root>
+      <Breadcrumb.Crumb href="/?path=/story/breadcrumb--main">
+        From here
+      </Breadcrumb.Crumb>
+      <Breadcrumb.Divider />
+      <Breadcrumb.Crumb href="/?path=/story/breadcrumb--main">
+        To There
+      </Breadcrumb.Crumb>
+      <Breadcrumb.Divider />
+      <Breadcrumb.Crumb active>And back again</Breadcrumb.Crumb>
+    </Breadcrumb.Root>
+  </Story>
+</Canvas>

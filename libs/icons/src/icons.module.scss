@@ -1,0 +1,40 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.Root {
+    fill: currentColor;
+    vertical-align: middle;
+    display: inline-block;
+    shape-rendering: inherit;
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+    height: auto;
+    max-height: 1.5em;
+    max-width: 1.5em;
+    user-select: none;
+    font-size: inherit;
+
+    & path {
+        fill: inherit;
+    }
+
+    &.small {
+        max-height: 1em;
+        max-width: 1em;
+    }
+
+    &.large {
+        max-height: 1.75em;
+        max-width: 1.75em;
+    }
+
+    &.huge {
+        max-height: 2.5em;
+        max-width: 2.5em;
+    }
+}
