@@ -15,15 +15,16 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tokenui": ["libs/lib/ui/src/index.ts"],
       "@tokenui/accordion": ["libs/accordion/src/index.ts"],
-      "@tokenui/aspect_ratio": ["libs/aspect-ratio/src/index.ts"],
+      "@tokenui/aspectratio": ["libs/aspect-ratio/src/index.ts"],
+      "@tokenui/avatar": ["libs/avatar/src/index.ts"],
       "@tokenui/badge": ["libs/badge/src/index.ts"],
       "@tokenui/breadcrumb": ["libs/breadcrumb/src/index.ts"],
       "@tokenui/button": ["libs/button/src/index.ts"],
       "@tokenui/checkbox": ["libs/checkbox/src/index.ts"],
       "@tokenui/collapsible": ["libs/collapsible/src/index.ts"],
       "@tokenui/container": ["libs/container/src/index.ts"],
+      "@tokenui/dummy": ["dist/libs/dummy"],
       "@tokenui/flex": ["libs/flex/src/index.ts"],
       "@tokenui/heading": ["libs/heading/src/index.ts"],
       "@tokenui/icons": ["libs/icons/src/index.ts"],
@@ -35,7 +36,7 @@
       "@tokenui/section": ["libs/section/src/index.ts"],
       "@tokenui/slider": ["libs/slider/src/index.ts"],
       "@tokenui/status": ["libs/status/src/index.ts"],
-      "@tokenui/styles": ["libs/styles/src/tokens/variables.css"],
+      "@tokenui/styles": ["libs/styles/src/tokens/_variables.scss"],
       "@tokenui/switch": ["libs/switch/src/index.ts"],
       "@tokenui/tabs": ["libs/tabs/src/index.ts"],
       "@tokenui/text": ["libs/text/src/index.ts"],
@@ -43,7 +44,8 @@
       "@tokenui/toggle": ["libs/toggle/src/index.ts"],
       "@tokenui/toggle-group": ["libs/toggle-group/src/index.ts"],
       "@tokenui/toolbar": ["libs/toolbar/src/index.ts"],
-      "@tokenui/tooltip": ["libs/tooltip/src/index.ts"]
+      "@tokenui/tooltip": ["libs/tooltip/src/index.ts"],
+      "@tokenui/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,0 +1,48 @@
+{
+  "padding": {
+    "sm": {
+      "value": "8",
+      "type": "spacing"
+    },
+    "xs": {
+      "value": "4",
+      "type": "spacing"
+    },
+    "li": {
+      "md": {
+        "value": "16",
+        "type": "spacing"
+      },
+      "sm": {
+        "value": "12",
+        "type": "spacing"
+      }
+    }
+  },
+  "font": {
+    "default": {
+      "value": "{global.fontfamily.Sans}",
+      "type": "fontFamilies"
+    }
+  },
+  "fontweight": {
+    "default": {
+      "value": "{global.fontweight.500}",
+      "type": "fontWeights"
+    }
+  },
+  "color": {
+    "active": {
+      "value": "{global.color.Lightpurple.500}",
+      "type": "color"
+    },
+    "default": {
+      "value": "#222",
+      "type": "color"
+    }
+  },
+  "Medium": {
+    "value": "16px",
+    "type": "fontSizes"
+  }
+}

@@ -1,0 +1,731 @@
+{
+  "global": {
+    "color": {
+      "Background": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "UI background color. All color contrasts evaluated and generated against this color."
+      },
+      "teal": {
+        "100": {
+          "value": "#ffaddd",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 3 (APCA) contrast is 30.35:1 against background #ffffff"
+        },
+        "200": {
+          "value": "#fe5cbb",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 3 (APCA) contrast is 53.08:1 against background #ffffff"
+        },
+        "300": {
+          "value": "#d2087d",
+          "type": "color",
+          "description": "Color can be used for UI elements or large text. WCAG 3 (APCA) contrast is 73.13:1 against background #ffffff"
+        },
+        "400": {
+          "value": "#b6076d",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 90.19:1 against background #ffffff"
+        },
+        "500": {
+          "value": "#880552",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.41:1 against background #ffffff"
+        },
+        "600": {
+          "value": "#ac0667",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "700": {
+          "value": "#250116",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "800": {
+          "value": "#250116",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "900": {
+          "value": "#250116",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "1000": {
+          "value": "#410226",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "1100": {
+          "value": "#250116",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        }
+      },
+      "brand": {
+        "100": {
+          "value": "#b9c4fb",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 3 (APCA) contrast is 30.35:1 against background #ffffff"
+        },
+        "200": {
+          "value": "#8395f7",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 3 (APCA) contrast is 53.08:1 against background #ffffff"
+        },
+        "300": {
+          "value": "#4662f3",
+          "type": "color",
+          "description": "Color can be used for UI elements or large text. WCAG 3 (APCA) contrast is 73.13:1 against background #ffffff"
+        },
+        "400": {
+          "value": "#1d36b9",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 90.19:1 against background #ffffff"
+        },
+        "500": {
+          "value": "#192FA1",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.41:1 against background #ffffff"
+        },
+        "600": {
+          "value": "#152989",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "700": {
+          "value": "#080f33",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "800": {
+          "value": "#111f6a",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "900": {
+          "value": "#101e65",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "1000": {
+          "value": "#0b1547",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        },
+        "1100": {
+          "value": "#080f33",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 3 (APCA) contrast is 104.99:1 against background #ffffff"
+        }
+      },
+      "Gray01": {
+        "100": {
+          "value": "#e9e9e9",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 2.x (relative luminance) contrast is 1.2:1 against background #ffffff"
+        },
+        "200": {
+          "value": "#d9d9d9",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 2.x (relative luminance) contrast is 1.4:1 against background #ffffff"
+        },
+        "300": {
+          "value": "#b5b5b5",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 2.x (relative luminance) contrast is 2.05:1 against background #ffffff"
+        },
+        "400": {
+          "value": "#949494",
+          "type": "color",
+          "description": "Color can be used for UI elements or large text. WCAG 2.x (relative luminance) contrast is 3.02:1 against background #ffffff"
+        },
+        "500": {
+          "value": "#767676",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 4.54:1 against background #ffffff"
+        },
+        "600": {
+          "value": "#595959",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 7:1 against background #ffffff"
+        },
+        "700": {
+          "value": "#3d3d3d",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 10.86:1 against background #ffffff"
+        },
+        "800": {
+          "value": "#373737",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 11.86:1 against background #ffffff"
+        },
+        "900": {
+          "value": "#323232",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 12.86:1 against background #ffffff"
+        },
+        "1000": {
+          "value": "#2c2c2c",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 13.86:1 against background #ffffff"
+        },
+        "1100": {
+          "value": "#212121",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 16:1 against background #ffffff"
+        }
+      },
+      "Lightpurple": {
+        "100": {
+          "value": "#eee6fc",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 2.x (relative luminance) contrast is 1.2:1 against background #ffffff"
+        },
+        "200": {
+          "value": "#e1d4fb",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 2.x (relative luminance) contrast is 1.4:1 against background #ffffff"
+        },
+        "300": {
+          "value": "#c3a7f6",
+          "type": "color",
+          "description": "Do not use for UI elements or text. WCAG 2.x (relative luminance) contrast is 2.05:1 against background #ffffff"
+        },
+        "400": {
+          "value": "#a77ff2",
+          "type": "color",
+          "description": "Color can be used for UI elements or large text. WCAG 2.x (relative luminance) contrast is 3.02:1 against background #ffffff"
+        },
+        "500": {
+          "value": "#8a55ee",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 4.54:1 against background #ffffff"
+        },
+        "600": {
+          "value": "#6723e9",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 7:1 against background #ffffff"
+        },
+        "700": {
+          "value": "#4306b5",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 10.86:1 against background #ffffff"
+        },
+        "800": {
+          "value": "#3d06a5",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 11.86:1 against background #ffffff"
+        },
+        "900": {
+          "value": "#380596",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 12.86:1 against background #ffffff"
+        },
+        "1000": {
+          "value": "#320588",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 13.86:1 against background #ffffff"
+        },
+        "1100": {
+          "value": "#27046a",
+          "type": "color",
+          "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 16:1 against background #ffffff"
+        }
+      },
+      "Shamrockgreen100": {
+        "value": "#8efbf9",
+        "type": "color",
+        "description": "Do not use for UI elements or text. WCAG 2.x (relative luminance) contrast is 1.2:1 against background #ffffff"
+      },
+      "Shamrockgreen200": {
+        "value": "#07f2ed",
+        "type": "color",
+        "description": "Do not use for UI elements or text. WCAG 2.x (relative luminance) contrast is 1.4:1 against background #ffffff"
+      },
+      "Shamrockgreen300": {
+        "value": "#06cac5",
+        "type": "color",
+        "description": "Do not use for UI elements or text. WCAG 2.x (relative luminance) contrast is 2.05:1 against background #ffffff"
+      },
+      "Shamrockgreen400": {
+        "value": "#05a5a2",
+        "type": "color",
+        "description": "Color can be used for UI elements or large text. WCAG 2.x (relative luminance) contrast is 3.02:1 against background #ffffff"
+      },
+      "Shamrockgreen500": {
+        "value": "#048481",
+        "type": "color",
+        "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 4.54:1 against background #ffffff"
+      },
+      "Shamrockgreen600": {
+        "value": "#036361",
+        "type": "color",
+        "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 7:1 against background #ffffff"
+      },
+      "Shamrockgreen700": {
+        "value": "#024443",
+        "type": "color",
+        "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 10.86:1 against background #ffffff"
+      },
+      "Shamrockgreen800": {
+        "value": "#023e3d",
+        "type": "color",
+        "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 11.86:1 against background #ffffff"
+      },
+      "Shamrockgreen900": {
+        "value": "#023937",
+        "type": "color",
+        "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 12.86:1 against background #ffffff"
+      },
+      "Shamrockgreen1000": {
+        "value": "#013231",
+        "type": "color",
+        "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 13.86:1 against background #ffffff"
+      },
+      "Shamrockgreen1100": {
+        "value": "#012626",
+        "type": "color",
+        "description": "Color can be used for small text. WCAG 2.x (relative luminance) contrast is 16:1 against background #ffffff"
+      },
+      "semantic": {
+        "state": {
+          "hover": {
+            "default": {
+              "value": "{global.color.Lightpurple.900}",
+              "type": "color"
+            },
+            "alert": {
+              "value": "#ff8900",
+              "type": "color"
+            }
+          },
+          "disabled": {
+            "default": {
+              "value": "{global.color.Lightpurple.300}",
+              "type": "color"
+            }
+          }
+        },
+        "Alert": {
+          "value": "#ff8900",
+          "type": "color"
+        },
+        "white": {
+          "value": "#fff",
+          "type": "color"
+        },
+        "default": {
+          "value": "{global.color.Lightpurple.700}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{global.color.Gray01.600}",
+          "type": "color"
+        }
+      },
+      "0_semantic": {
+        "disabled": {
+          "value": "#ffafaf",
+          "type": "color"
+        }
+      },
+      "primary": {
+        "100": {
+          "value": "#FFE5F1",
+          "type": "color"
+        },
+        "200": {
+          "value": "#FFCCE4",
+          "type": "color"
+        },
+        "300": {
+          "value": "#FFB2D6",
+          "type": "color"
+        },
+        "400": {
+          "value": "#FF8CC3",
+          "type": "color"
+        },
+        "500": {
+          "value": "#FF6EB3",
+          "type": "color"
+        },
+        "600": {
+          "value": "#FF419C",
+          "type": "color"
+        },
+        "700": {
+          "value": "#F2308D",
+          "type": "color"
+        },
+        "800": {
+          "value": "#D91A76",
+          "type": "color"
+        },
+        "900": {
+          "value": "#BF1366",
+          "type": "color"
+        },
+        "1000": {
+          "value": "#990046",
+          "type": "color"
+        },
+        "1100": {
+          "value": "#730034",
+          "type": "color"
+        }
+      }
+    },
+    "fontweight": {
+      "500": {
+        "value": "Semi Bold",
+        "type": "fontWeights"
+      },
+      "800": {
+        "value": "Extra Bold",
+        "type": "fontWeights"
+      },
+      "medium": {
+        "value": "Medium",
+        "type": "fontWeights"
+      },
+      "bold": {
+        "value": "Bold",
+        "type": "fontWeights"
+      },
+      "light": {
+        "value": "light",
+        "type": "fontWeights"
+      }
+    },
+    "fontsize": {
+      "base": {
+        "value": "16",
+        "type": "fontSizes",
+        "description": "adsadfsdfsdfsdfsdfsdfsd"
+      }
+    },
+    "components": {
+      "huge": {
+        "value": "{global.fontsize.base} * 1.5",
+        "type": "fontSizes"
+      },
+      "md": {
+        "value": "{global.fontsize.base} * 12 / {global.fontsize.base}",
+        "type": "fontSizes"
+      }
+    },
+    "radii": {
+      "sm": {
+        "value": "2",
+        "type": "borderRadius"
+      },
+      "md": {
+        "value": "3",
+        "type": "borderRadius"
+      },
+      "lg": {
+        "value": "4",
+        "type": "borderRadius"
+      },
+      "pill": {
+        "value": "100",
+        "type": "borderRadius"
+      },
+      "none": {
+        "value": "0",
+        "type": "borderRadius"
+      }
+    },
+    "typo": {
+      "components": {
+        "Small": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.medium}",
+            "fontSize": "9",
+            "textCase": "Uppercase",
+            "lineHeight": "{global.fontsize.base}"
+          },
+          "type": "typography"
+        },
+        "Medium": {
+          "value": {
+            "fontFamily": "Inter",
+            "fontWeight": "{global.fontweight.medium}",
+            "fontSize": "{global.components.md}",
+            "lineHeight": "16px"
+          },
+          "type": "typography"
+        },
+        "Normal": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "Regular",
+            "fontSize": "16",
+            "lineHeight": "24"
+          },
+          "type": "typography"
+        },
+        "large": {
+          "value": {
+            "fontFamily": "Inter",
+            "fontWeight": "{global.fontweight.500}",
+            "fontSize": "14",
+            "lineHeight": "16"
+          },
+          "type": "typography"
+        },
+        "huge": {
+          "value": {
+            "fontFamily": "Inter",
+            "fontWeight": "Semi Bold",
+            "fontSize": "18",
+            "lineHeight": ""
+          },
+          "type": "typography"
+        }
+      },
+      "header": {
+        "H1": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.800}",
+            "lineHeight": "160%",
+            "fontSize": "4.5*{global.fontsize.base}"
+          },
+          "type": "typography"
+        },
+        "H2": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.800}",
+            "lineHeight": "150%",
+            "fontSize": "4*{global.fontsize.base}"
+          },
+          "type": "typography"
+        },
+        "H3": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.bold}",
+            "lineHeight": "140%",
+            "fontSize": "3*{global.fontsize.base}"
+          },
+          "type": "typography"
+        },
+        "H4": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.bold}",
+            "lineHeight": "125%",
+            "fontSize": "2.25*{global.fontsize.base}"
+          },
+          "type": "typography"
+        },
+        "H5": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.bold}",
+            "lineHeight": "125%",
+            "fontSize": "1.5*{global.fontsize.base}"
+          },
+          "type": "typography"
+        },
+        "H6": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.bold}",
+            "lineHeight": "125%",
+            "fontSize": "1.125*{global.fontsize.base}"
+          },
+          "type": "typography"
+        }
+      },
+      "sizes": {
+        "xxl": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.800}",
+            "lineHeight": "125%",
+            "fontSize": "{global.fontsize.base}*5"
+          },
+          "type": "typography"
+        },
+        "Large": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.800}",
+            "lineHeight": "125%",
+            "fontSize": "{global.fontsize.base}*4.2"
+          },
+          "type": "typography"
+        },
+        "huge": {
+          "value": {
+            "fontFamily": "{global.fontfamily.Sans}",
+            "fontWeight": "{global.fontweight.800}",
+            "lineHeight": "125%",
+            "fontSize": "{global.fontsize.base}*7.75"
+          },
+          "type": "typography"
+        }
+      }
+    },
+    "spacing": {
+      "1": {
+        "value": "1",
+        "type": "spacing"
+      },
+      "2": {
+        "value": "2",
+        "type": "spacing"
+      },
+      "3": {
+        "value": "3",
+        "type": "spacing"
+      },
+      "4": {
+        "value": "4",
+        "type": "spacing"
+      },
+      "6": {
+        "value": "6",
+        "type": "spacing"
+      },
+      "8": {
+        "value": "8",
+        "type": "spacing"
+      },
+      "12": {
+        "value": "12",
+        "type": "spacing"
+      },
+      "16": {
+        "value": "16",
+        "type": "spacing"
+      },
+      "24": {
+        "value": "24",
+        "type": "spacing"
+      },
+      "32": {
+        "value": "32",
+        "type": "spacing"
+      },
+      "40": {
+        "value": "40",
+        "type": "spacing"
+      },
+      "64": {
+        "value": "64",
+        "type": "spacing"
+      }
+    },
+    "fontfamily": {
+      "Sans": {
+        "value": "Inter",
+        "type": "fontFamilies"
+      }
+    },
+    "sizing": {
+      "4": {
+        "value": "{global.sizing.scale}",
+        "type": "sizing"
+      },
+      "8": {
+        "value": "{global.fontsize.base}/2",
+        "type": "sizing"
+      },
+      "12": {
+        "value": "{global.sizing.scale}*1.5",
+        "type": "sizing"
+      },
+      "16": {
+        "value": "{global.sizing.scale} *2",
+        "type": "sizing"
+      },
+      "20": {
+        "value": "{global.sizing.scale} * 2.5",
+        "type": "sizing"
+      },
+      "24": {
+        "value": "24",
+        "type": "sizing"
+      },
+      "32": {
+        "value": "32",
+        "type": "sizing"
+      },
+      "40": {
+        "value": "40",
+        "type": "sizing"
+      },
+      "48": {
+        "value": "48",
+        "type": "sizing"
+      },
+      "56": {
+        "value": "56",
+        "type": "sizing"
+      },
+      "64": {
+        "value": "64",
+        "type": "sizing"
+      },
+      "72": {
+        "value": "72",
+        "type": "sizing"
+      },
+      "256": {
+        "value": "256",
+        "type": "sizing"
+      },
+      "512": {
+        "value": "512",
+        "type": "sizing"
+      },
+      "scale": {
+        "value": "8",
+        "type": "sizing"
+      }
+    },
+    "border": {
+      "1": {
+        "value": "1",
+        "type": "borderWidth"
+      },
+      "2": {
+        "value": "2",
+        "type": "borderWidth"
+      },
+      "3": {
+        "value": "3",
+        "type": "borderWidth"
+      }
+    },
+    "lineheight": {
+      "onethird": {
+        "value": "1.45",
+        "type": "lineHeights"
+      }
+    }
+  },
+  "shadows": {
+    "dropshadow": {
+      "focus": {
+        "value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "2",
+          "color": "{global.color.brand.200}",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow"
+      }
+    }
+  }
+}

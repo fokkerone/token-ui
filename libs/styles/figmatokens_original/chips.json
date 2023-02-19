@@ -1,0 +1,20 @@
+{
+  "sizing": {
+    "XL": {
+      "value": "18",
+      "type": "sizing"
+    },
+    "L": {
+      "value": "14",
+      "type": "sizing"
+    },
+    "M": {
+      "value": "{global.fontsize.base}*0.75",
+      "type": "sizing"
+    },
+    "S": {
+      "value": "9",
+      "type": "sizing"
+    }
+  }
+}

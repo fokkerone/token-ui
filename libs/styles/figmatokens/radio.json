@@ -1,0 +1,22 @@
+{
+  "radio": {
+    "size": {
+      "sm": {
+        "value": "12",
+        "type": "sizing"
+      },
+      "md": {
+        "value": "16",
+        "type": "sizing"
+      },
+      "lg": {
+        "value": "{global.sizing.24}",
+        "type": "sizing"
+      },
+      "hg": {
+        "value": "32",
+        "type": "sizing"
+      }
+    }
+  }
+}

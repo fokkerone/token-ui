@@ -1,1 +1,1 @@
-export * from './lib/container';
+export { default as Container } from './lib/container';

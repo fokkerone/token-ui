@@ -1,0 +1,28 @@
+.section {
+    div {
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        width: auto;
+        height: 100%;
+        margin: 0;
+        vertical-align: middle;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section {
+        background-color: red;
+
+        width: calc(100% / 2 + 1260px / 2);
+        margin: 0 0 0 auto;
+        max-width: calc(100% / 2 + 1260px / 2);
+    }
+
+    .grid {
+        display: grid;
+        grid-gap: 32px;
+        grid-template-columns: 40% auto;
+    }
+}

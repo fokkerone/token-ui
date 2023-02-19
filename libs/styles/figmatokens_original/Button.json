@@ -1,0 +1,49 @@
+{
+  "button": {
+    "Default": {
+      "value": {
+        "fontFamily": "Inter",
+        "fontSize": "14",
+        "lineHeight": "16",
+        "fontWeight": "{global.fontweight.500}"
+      },
+      "type": "typography"
+    },
+    "Small": {
+      "value": {
+        "fontFamily": "Inter",
+        "fontSize": "10",
+        "lineHeight": "16",
+        "fontWeight": "{global.fontweight.bold}",
+        "textCase": "Uppercase"
+      },
+      "type": "typography"
+    },
+    "Large": {
+      "value": {
+        "fontFamily": "Inter",
+        "fontSize": "18",
+        "lineHeight": "24",
+        "fontWeight": "{global.fontweight.500}"
+      },
+      "type": "typography"
+    },
+    "Huge": {
+      "value": {
+        "fontFamily": "Inter",
+        "fontSize": "24",
+        "lineHeight": "32",
+        "fontWeight": "{global.fontweight.500}"
+      },
+      "type": "typography"
+    }
+  },
+  "fontsize": {
+    "button": {
+      "huge": {
+        "value": "12",
+        "type": "fontSizes"
+      }
+    }
+  }
+}

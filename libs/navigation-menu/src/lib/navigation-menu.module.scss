@@ -5,14 +5,18 @@
  * .container {
  * }
 */
+@import "../../../styles/mixins/index";
+@import "../../../styles/src/tokens/variables";
 
 .root {
+    @extend %Navmenu;
+    font-family: var(--navmenu-font-default);
+    font-weight: var(--navmenu-font-weight-default);
     position: relative;
     display: flex;
     justify-content: center;
     width: 100vw;
     z-index: 1;
-    font-family: var(--font-family-default);
 }
 
 .list {
@@ -23,9 +27,14 @@
     list-style: none;
     margin: 0;
 }
+
+.link {
+    color: pink;
+}
 .item {
     // position: relative;
 }
+
 .indicator {
     display: flex;
     align-items: flex-end;
@@ -57,27 +66,32 @@
     animation-timing-function: ease;
 }
 
-.trigger {
+.trigger,
+.link {
     all: unset;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2px;
-    font-family: var(--sans);
+
     padding: 8px 12px;
     outline: none;
     user-select: none;
     font-weight: 500;
     line-height: 1;
-    border-radius: 4px;
     font-size: 15px;
     color: var(--global-color-brand-400);
 
     &:focus,
-    .NavigationMenuLink:focus {
-        box-shadow: 0 0 0 2px var(--global-color-brand-200);
+    .link:focus {
+        //  box-shadow: 0 0 0 2px var(--global-color-brand-200);
     }
     &:hover {
-        background-color: var(--global-color-brand-500);
+        color: pink;
+        // background-color: var(--global-color-brand-500);
+    }
+
+    &:active {
+        color: red;
+        // background-color: var(--global-color-brand-500);
     }
 }

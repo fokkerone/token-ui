@@ -1,0 +1,80 @@
+{
+  "checkbox": {
+    "radii": {
+      "100": {
+        "value": "100",
+        "type": "borderRadius"
+      },
+      "none": {
+        "value": "0",
+        "type": "borderRadius"
+      },
+      "sm": {
+        "value": "2",
+        "type": "borderRadius"
+      },
+      "md": {
+        "value": "2",
+        "type": "borderRadius"
+      },
+      "lg": {
+        "value": "3",
+        "type": "borderRadius"
+      },
+      "hg": {
+        "value": "4",
+        "type": "borderRadius"
+      }
+    },
+    "small": {
+      "value": "12px",
+      "type": "sizing"
+    },
+    "medium": {
+      "value": "16",
+      "type": "sizing"
+    },
+    "large": {
+      "value": "24",
+      "type": "sizing"
+    },
+    "huge": {
+      "value": "32",
+      "type": "sizing"
+    },
+    "sm": {
+      "value": "4",
+      "type": "spacing"
+    },
+    "md": {
+      "value": "6",
+      "type": "spacing"
+    },
+    "lg": {
+      "value": "8",
+      "type": "spacing"
+    },
+    "hg": {
+      "value": "12",
+      "type": "spacing"
+    }
+  },
+  "borderwidth": {
+    "sm": {
+      "value": "1",
+      "type": "borderWidth"
+    },
+    "md": {
+      "value": "1",
+      "type": "borderWidth"
+    },
+    "lg": {
+      "value": "2",
+      "type": "borderWidth"
+    },
+    "hg": {
+      "value": "3",
+      "type": "borderWidth"
+    }
+  }
+}

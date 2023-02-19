@@ -28,7 +28,7 @@ export interface NavigationMenuContentProps
 
 export const Root = ({ children, ...props }: NavigationMenuRootProps) => {
   return (
-    <NavigationMenu.Root className={styles['Root']} {...props}>
+    <NavigationMenu.Root className={styles['root']} {...props}>
       {children}
     </NavigationMenu.Root>
   );
@@ -50,8 +50,12 @@ export const Item = ({ children, ...props }: NavigationMenuItemProps) => {
   );
 };
 
-export const Link = (props) => {
-  return <NavigationMenu.Indicator />;
+export const Link = ({ children, props }) => {
+  return (
+    <NavigationMenu.Link className={styles['link']}>
+      {children}
+    </NavigationMenu.Link>
+  );
 };
 
 export const Indicator = (props) => {

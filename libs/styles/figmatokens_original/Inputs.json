@@ -1,0 +1,22 @@
+{
+  "radii": {
+    "small": {
+      "value": "{radii.small}",
+      "type": "borderRadius"
+    }
+  },
+  "size": {
+    "small": {
+      "value": "{global.sizing.32}",
+      "type": "sizing"
+    },
+    "medium": {
+      "value": "{global.sizing.40}",
+      "type": "sizing"
+    },
+    "large": {
+      "value": "{global.sizing.48}",
+      "type": "sizing"
+    }
+  }
+}

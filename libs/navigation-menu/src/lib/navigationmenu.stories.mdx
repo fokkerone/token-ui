@@ -54,15 +54,47 @@ With `MDX`, we can define a story for `Label` right in the middle of our Markdow
 </Canvas>
 
 <Canvas>
-  <Story name="With Indicator">
+  <Story name="Links">
     <NavigationMenu.Root>
       <NavigationMenu.List>
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger>Item one</NavigationMenu.Trigger>
+          <NavigationMenu.Trigger asChild>
+            <NavigationMenu.Link href="/">Home</NavigationMenu.Link>
+          </NavigationMenu.Trigger>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger>WFT?</NavigationMenu.Trigger>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item>
+          <NavigationMenu.Trigger asChild>
+            <a href="#">WFT?aAA</a>
+          </NavigationMenu.Trigger>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item>
+          <NavigationMenu.Link href="/about">About</NavigationMenu.Link>
+          <NavigationMenu.Content>ssff</NavigationMenu.Content>
+        </NavigationMenu.Item>
+        <NavigationMenu.Indicator />
+      </NavigationMenu.List>
+    </NavigationMenu.Root>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="With Indicator">
+    <NavigationMenu.Root defaultValue="item1">
+      <NavigationMenu.List>
+        <NavigationMenu.Item href="/vff">
+          <NavigationMenu.Link>Linksdsd</NavigationMenu.Link>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item value="item1">
+          <NavigationMenu.Trigger data-state="open">
+            <NavigationMenu.Link ahref="/">active second</NavigationMenu.Link>
+          </NavigationMenu.Trigger>
         </NavigationMenu.Item>
         <NavigationMenu.Item>
           <NavigationMenu.Trigger>
-            Item twodsfg asdfsdfsd
+            <NavigationMenu.Link ahref="/">Link</NavigationMenu.Link>
           </NavigationMenu.Trigger>
         </NavigationMenu.Item>
         <NavigationMenu.Indicator />

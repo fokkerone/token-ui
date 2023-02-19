@@ -1,9 +1,21 @@
 /**
  * Do not edit directly
- * Generated on Fri, 16 Dec 2022 07:54:55 GMT
+ * Generated on Mon, 09 Jan 2023 12:07:11 GMT
  */
 
 :root {
+  --medium: 1rem;
+  --color-default: #222;
+  --padding-li-sm: 0.75rem;
+  --padding-li-md: 1rem;
+  --padding-xs: 0.25rem;
+  --padding-sm: 0.5rem;
+  --radio-size-hg: 2rem;
+  --radio-size-md: 1rem;
+  --radio-size-sm: 0.75rem;
+  --navmenu-color-default: #222;
+  --navmenu-padding-xs: 0.25rem;
+  --navmenu-padding-sm: 0.5rem;
   --global-lineheight-onethird: 1.45;
   --global-border-3: 3;
   --global-border-2: 2;
@@ -106,6 +118,11 @@
   --global-color-teal-200: #fe5cbb;
   --global-color-teal-100: #ffaddd;
   --global-color-background: #ffffff;
+  --container-breakpoints-huge: 95em;
+  --container-breakpoints-xl: 82.5em;
+  --container-breakpoints-lg: 71.25em;
+  --container-breakpoints-md: 60em;
+  --container-breakpoints-sm: 43.75em;
   --checkbox-size-huge: 2rem;
   --checkbox-size-large: 1.5rem;
   --checkbox-size-medium: 1rem;
@@ -137,6 +154,13 @@
   --avatar-radii-sm: 0.125rem;
   --avatar-radii-xs: 0.0625rem;
   --avatar-sizing-huge: 5rem;
+  --color-active: var(--global-color-lightpurple-500);
+  --fontweight-default: var(--global-fontweight-500);
+  --font-default: var(--global-fontfamily-sans);
+  --radio-size-lg: var(--global-sizing-24);
+  --navmenu-color-active: var(--global-color-lightpurple-500);
+  --navmenu-fontweight-default: var(--global-fontweight-500);
+  --navmenu-font-default: var(--global-fontfamily-sans);
   --shadows-dropshadow-focus: boxShadow-focus-group;
   --boxShadow-focus-x: 0;
   --boxShadow-focus-y: 0;

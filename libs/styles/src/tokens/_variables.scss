@@ -43,6 +43,13 @@
 	--checkbox-size-large: 1.5rem;
 	--checkbox-size-huge: 2rem;
 }
+%container {
+	--container-breakpoints-sm: 43.75em;
+	--container-breakpoints-md: 60em;
+	--container-breakpoints-lg: 71.25em;
+	--container-breakpoints-xl: 82.5em;
+	--container-breakpoints-huge: 95em;
+}
 %global {
 	--global-color-background: #ffffff;
 	--global-color-teal-100: #ffaddd;
@@ -232,4 +239,37 @@
   --boxShadow-focus-spread: 2;
   --boxShadow-focus-color: var(--global-color-brand-200);
   --boxShadow-focus-type: dropShadow;
+}
+%Navmenu {
+	--navmenu-padding-sm: 0.5rem;
+	--navmenu-padding-xs: 0.25rem;
+	--navmenu-font-default: var(--global-fontfamily-sans);
+	--navmenu-fontweight-default: var(--global-fontweight-500);
+	--navmenu-color-active: var(--global-color-lightpurple-500);
+	--navmenu-color-default: #222;
+}
+%radio {
+	--radio-size-sm: 0.75rem;
+	--radio-size-md: 1rem;
+	--radio-size-lg: var(--global-sizing-24);
+	--radio-size-hg: 2rem;
+}
+%padding {
+	--padding-sm: 0.5rem;
+	--padding-xs: 0.25rem;
+	--padding-li-md: 1rem;
+	--padding-li-sm: 0.75rem;
+}
+%font {
+	--font-default: var(--global-fontfamily-sans);
+}
+%fontweight {
+	--fontweight-default: var(--global-fontweight-500);
+}
+%color {
+	--color-active: var(--global-color-lightpurple-500);
+	--color-default: #222;
+}
+%Medium {
+	--medium: 1rem;
 }

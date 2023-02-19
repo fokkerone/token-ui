@@ -5,8 +5,6 @@ export interface ButtonProps {
   children?: React.ReactNode;
 }
 
-export function Button(props: ButtonProps) {
+export const Button = (props: ButtonProps) => {
   return <button className={styles['Root']}>{props.children}</button>;
-}
-
-export default Button;
+};

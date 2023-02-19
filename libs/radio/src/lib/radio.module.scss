@@ -5,8 +5,11 @@
  * .container {
  * }
 */
+@import "../../../styles/mixins/index";
+@import "../../../styles/src/tokens/variables";
 
 .root {
+    @extend %radio;
     all: unset;
     box-sizing: border-box;
 
@@ -25,8 +28,7 @@
     color: var(--global-color-semantic-alert);
     box-shadow: inset 0 0 0 1px var(--global-color-semantic-state-hover-alert);
     overflow: hidden;
-    height: 24px;
-    width: 24px;
+    @include size(var(--radio-size-lg));
 }
 
 .indicator {

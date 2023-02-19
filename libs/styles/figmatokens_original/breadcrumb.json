@@ -1,0 +1,14 @@
+{
+  "breadcrumb": {
+    "font": {
+      "value": "{global.fontfamily.Sans}",
+      "type": "fontFamilies"
+    },
+    "fontsize": {
+      "small": {
+        "value": "{global.components.md}",
+        "type": "fontSizes"
+      }
+    }
+  }
+}

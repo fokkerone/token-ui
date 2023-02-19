@@ -1,0 +1,22 @@
+{
+  "fontfamily": {
+    "value": "{font.default}",
+    "type": "fontFamilies"
+  },
+  "sm": {
+    "value": "{fontsize.small}",
+    "type": "fontSizes"
+  },
+  "md": {
+    "value": "{fontsize.default}",
+    "type": "fontSizes"
+  },
+  "lg": {
+    "value": "{fontsize.large}",
+    "type": "fontSizes"
+  },
+  "hg": {
+    "value": "24",
+    "type": "fontSizes"
+  }
+}

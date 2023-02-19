@@ -42,7 +42,6 @@ StyleDictionary.registerTransform({
   type: 'value',
   transitive: false,
   matcher: function (token) {
-    console.log(token.type);
     return (
       token.type === 'spacing' ||
       token.type === 'sizing' ||
@@ -51,6 +50,22 @@ StyleDictionary.registerTransform({
     );
   },
   transformer: StyleDictionary.transform['size/pxToRem'].transformer,
+});
+
+StyleDictionary.registerTransform({
+  name: 'make/em',
+  type: 'value',
+  transitive: false,
+  matcher: function (token) {
+    return token.type === 'other';
+  },
+  transformer: (Token) => {
+    console.log('OTHER', Token);
+    if (Token.attributes.type === 'breakpoints') {
+      Token.value = Token.original.value / 16 + 'em';
+    }
+    return Token.value;
+  },
 });
 
 StyleDictionary.registerTransform({
@@ -152,6 +167,7 @@ StyleDictionary.registerTransformGroup({
     'attribute/cti',
     'name/cti/kebab',
     'make/rem',
+    'make/em',
     // 'color/css',
     // 'time/seconds',
     // 'color/css',

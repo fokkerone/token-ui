@@ -1,0 +1,15 @@
+{
+  "tokenSetOrder": [
+    "global",
+    "Button",
+    "avatar",
+    "checkbox-radio",
+    "chips",
+    "Inputs",
+    "breadcrumb",
+    "Radio",
+    "Navmenu",
+    "container",
+    "label"
+  ]
+}

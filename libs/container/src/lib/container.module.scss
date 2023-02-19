@@ -1,28 +1,38 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.root {
+  width: 100%;
+  margin: 0 auto;
+  max-width: calc(100vw - 32px);
+  background-color: pink;
+  min-height: 10vh;
 
-@mixin px($value) {
-
-  
-    padding-left: var(--spacing-global-12);
-    padding-right: var(--spacing-global-12);
+  @media (min-width: 72em) {
+    //1152
+    width: calc(100vw - 96px);
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: rgba(59, 27, 32, 0.4);
   }
 
-.Root{
-    // Reset
-  boxSizing: 'border-box';
-  flexShrink: 0;
+  @media (min-width: 96em) {
+    //1536
+    width: 100%;
+    margin: 0 auto;
+    max-width: calc(100vw - 128px);
+    background-color: red;
+  }
 
-  margin-left: auto;
-  margin-right: auto;
+  @media (min-width: 124em) {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+    background-color: rgb(113, 184, 58);
+  }
+}
 
-  @include px(34);
+.left {
+  margin-left: 0;
+}
 
-  border: 1px solid green;
- 
+.right {
+  margin-right: 0;
 }

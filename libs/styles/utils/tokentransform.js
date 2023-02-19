@@ -4,8 +4,6 @@ var cmd = require('node-cmd');
 
 const filesDir = path.join(__dirname, '../figmatokens');
 
-console.log(filesDir);
-
 let TokenFiles = fs.readdirSync(filesDir);
 
 TokenFiles = TokenFiles.filter((name) => name.includes('.json'));
