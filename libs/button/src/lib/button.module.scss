@@ -5,40 +5,193 @@
  * .container {
  * }
 */
+@import "../../../styles/mixins/index";
 
-.Root {
+@mixin gostcolors($color) {
+  color: $color;
+  border-color: $color;
+  &:hover {
+    background-color: $color;
+    color: white;
+  }
+}
+.root {
   // Reset
   all: unset;
-  alignitems: center;
-  boxsizing: border-box;
-  userselect: none;
+  align-items: center;
 
-  :before: {
-    boxsizing: border-box;
-  }
-  :after: {
-    boxsizing: border-box;
-  }
-
-  &:hover {
-    background-color: var(--global-color-brand-200);
-    cursor: pointer;
-  }
+  box-sizing: border-box;
+  user-select: none;
 
   // Custom reset?
   display: inline-flex;
   flex-shrink: 0;
   justify-content: center;
   line-height: 1;
-  webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-  background-color: var(--global-color-brand-1100);
+  background-color: var(--global-color-lightpurple-800);
+  border-color: var(--global-color-lightpurple-800);
+  color: white;
 
-  // Custom
-  height: var(--global-32);
-
-  font-family: sans;
-  font-size: 1rem;
+  font-family: var(--global-fontfamily-sans);
   font-weight: 500;
   font-variant-numeric: tabular-nums;
+  cursor: pointer;
+
+  // :before {
+  //   box-sizing: border-box;
+  // }
+
+  // &:after {
+  //   box-sizing: border-box;
+  // }
+
+  // &:hover {
+  //   background-color: var(--global-color-brand-500);
+  //   cursor: pointer;
+  // },
+  position: relative;
+  letter-spacing: 0.03rem;
+  // &:before,
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 1%;
+  //   left: 1%;
+  //   bottom: 1%;
+  //   right: 1%;
+  //   border-radius: 4%;
+  //   border: 2px solid rgba(#3c470e, 0.7);
+  //   filter: blur(0);
+  //   transform-origin: 50%;
+  //   z-index: -1;
+  // }
+
+  &:focus-within {
+    &:before,
+    &:after {
+      border-color: transparent;
+      filter: blur(6px);
+      transform: scale(2.4);
+      transition: 700ms transform ease, 600ms blur ease, 900ms border-color ease;
+    }
+    &:after {
+      transition-delay: 100ms;
+    }
+  }
+}
+
+// ----------------------------------------------------------------
+// Sizes
+.size-default {
+  @include py(var(--global-spacing-12));
+  @include px(var(--global-spacing-16));
+  border-radius: var(--global-radii-sm);
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+}
+
+.size-small {
+  @include py(var(--global-spacing-8));
+  @include px(var(--global-spacing-12));
+  border-radius: var(--global-radii-sm);
+  line-height: 1.6;
+  letter-spacing: 0.09rem;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+}
+
+.size-large {
+  @include py(var(--global-spacing-12));
+  @include px(var(--global-spacing-24));
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+  font-weight: 500;
+  border-radius: var(--global-radii-md);
+}
+
+.size-xlarge {
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.5rem;
+  line-height: 1.3333333333;
+  font-weight: 600;
+  border-radius: var(--global-radii-lg);
+}
+
+// ----------------------------------------------------------------
+// Colors
+
+.secondary {
+  background-color: rgb(255, 16, 247);
+}
+
+.error {
+  background-color: var(--global-color-teal-600);
+}
+
+.success {
+  background-color: var(--global-color-shamrockgreen500);
+}
+
+.ghost {
+  color: var(--global-color-lightpurple-800);
+
+  border-width: 1px;
+  background-color: transparent;
+  border-style: solid;
+
+  &:hover {
+    background-color: var(--global-color-lightpurple-800);
+    color: white;
+  }
+
+  &.size-small {
+    border-width: 1px;
+  }
+
+  &.size-large {
+    border-width: 2px;
+  }
+
+  &.size-xlarge {
+    height: 64px;
+    border-width: 3px;
+  }
+
+  &.error {
+    color: var(--global-color-teal-600);
+    &:hover {
+      background-color: var(--global-color-teal-600);
+      color: white;
+    }
+  }
+
+  &.success {
+    @include gostcolors(var(--global-color-shamrockgreen500));
+  }
+
+  &.warning {
+    @include gostcolors(orange);
+  }
+}
+
+.link {
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  &.success {
+    color: var(--global-color-shamrockgreen500);
+
+    &:hover {
+      border-bottom-color: var(--global-color-shamrockgreen500);
+    }
+  }
+  &.warning {
+    color: orange;
+
+    &:hover {
+      border-bottom-color: orange;
+    }
+  }
 }

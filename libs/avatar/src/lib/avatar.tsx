@@ -6,7 +6,7 @@ import { FiUser } from '@tokenui/icons';
 type default_sizes = 'xsmall' | 'small' | 'default' | 'large' | 'xlarge';
 
 export interface AvatarProps {
-  size?: 'small' | 'large' | 'huge';
+  size?: default_sizes;
   children?: React.ReactNode;
 }
 
@@ -14,13 +14,13 @@ export interface AvatarRootProps extends AvatarRadix.AvatarProps {
   children?: React.ReactNode;
   className?: string;
   type?: 'rounded' | 'circle' | 'square';
-  size?: 'xsmall' | 'small' | 'huge' | 'large' | 'medium' | 'xlarge';
+  size?: default_sizes;
   bg?: string;
   color?: string;
 }
 
 export const Root = ({
-  size = 'medium',
+  size = 'default',
   type,
   className,
   bg,

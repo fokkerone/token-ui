@@ -1,27 +1,27 @@
 <!-- Label.stories.mdx -->
 
-import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs';
 
 import * as Checkbox from './checkbox';
 
 <Meta
-  title="Checkbox"
-  component={Checkbox.Root}
-  argTypes={{
-    size: {
-      name: 'size',
-      description: 'Checkbox Size',
-      control: {
-        type: 'select',
-      },
-    },
-  }}
+    title="Checkbox"
+    component={Checkbox.Root}
+    argTypes={{
+        size: {
+            name: 'size',
+            description: 'Checkbox Size',
+            control: {
+                type: 'select',
+            },
+        },
+    }}
 />
 
 export const Template = (args) => (
-  <Checkbox.Root size={args.size}>
-    <Checkbox.Indicator />
-  </Checkbox.Root>
+    <Checkbox.Root size={args.size}>
+        <Checkbox.Indicator />
+    </Checkbox.Root>
 );
 
 # Label
@@ -33,12 +33,12 @@ With `MDX`, we can define a story for `Label` right in the middle of our Markdow
 <ArgsTable of={Avatar.Root} />
 
 <Canvas>
-  <Story
-    name="Main"
-    args={{
-      size: 'large',
-    }}
-  >
-    {Template.bind({})}
-  </Story>
+    <Story
+        name="Main"
+        args={{
+            size: 'large',
+        }}
+    >
+        {Template.bind({})}
+    </Story>
 </Canvas>
