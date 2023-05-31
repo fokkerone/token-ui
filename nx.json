@@ -2,41 +2,41 @@
     "extends": "nx/presets/npm.json",
     "npmScope": "happyorg",
     "affected": {
-      "defaultBase": "main"
+        "defaultBase": "main"
     },
     "workspaceLayout": {
-      "appsDir": "demos",
-      "libsDir": "packages"
+        "appsDir": "demos",
+        "libsDir": "packages"
     },
     "implicitDependencies": {
-      "package.json": {
-        "dependencies": "*",
-        "devDependencies": "*"
-      },
-      "tsconfig.base.json": "*",
-      "nx.json": "*"
+        "package.json": {
+            "dependencies": "*",
+            "devDependencies": "*"
+        },
+        "tsconfig.base.json": "*",
+        "nx.json": "*"
     },
     "namedInputs": {
-      "default": ["{projectRoot}/**/*"],
-      "production": ["!{projectRoot}/**/*.spec.tsx"]
+        "default": ["{projectRoot}/**/*"],
+        "production": ["!{projectRoot}/**/*.spec.tsx"]
     },
     "targetDefaults": {
-      "build": {
-        "inputs": ["production", "^production"],
-        "dependsOn": ["^build"]
-      }
+        "build": {
+            "inputs": ["production", "^production"],
+            "dependsOn": ["^build"]
+        }
     },
     "generators": {
-      "@nx/js:library": {
-        "buildable": true
-      }
+        "@nx/js:library": {
+            "buildable": true
+        }
     },
     "tasksRunnerOptions": {
-      "default": {
-        "runner": "nx/tasks-runners/default",
-        "options": {
-          "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "default": {
+            "runner": "nx/tasks-runners/default",
+            "options": {
+                "cacheableOperations": ["build", "lint", "test", "e2e"]
+            }
         }
-      }
     }
-  }
+}
