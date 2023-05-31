@@ -1,7 +1,7 @@
 {
   "name": "flex",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/flex/src",
+  "sourceRoot": "libs/datepicker/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -12,9 +12,9 @@
       ],
       "options": {
         "outputPath": "dist/libs/flex",
-        "tsConfig": "libs/flex/tsconfig.lib.json",
-        "project": "libs/flex/package.json",
-        "entryFile": "libs/flex/src/index.ts",
+        "tsConfig": "libs/datepicker/tsconfig.lib.json",
+        "project": "libs/datepicker/package.json",
+        "entryFile": "libs/datepicker/src/index.ts",
         "external": [
           "react/jsx-runtime"
         ],
@@ -22,7 +22,7 @@
         "compiler": "babel",
         "assets": [
           {
-            "glob": "libs/flex/README.md",
+            "glob": "libs/datepicker/README.md",
             "input": ".",
             "output": "."
           }
@@ -36,7 +36,7 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "libs/flex/**/*.{ts,tsx,js,jsx}"
+          "libs/datepicker/**/*.{ts,tsx,js,jsx}"
         ]
       }
     },
@@ -46,7 +46,7 @@
         "{workspaceRoot}/coverage/{projectRoot}"
       ],
       "options": {
-        "jestConfig": "libs/flex/jest.config.ts",
+        "jestConfig": "libs/datepicker/jest.config.ts",
         "passWithNoTests": true
       }
     }

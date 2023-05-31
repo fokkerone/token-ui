@@ -1,0 +1,109 @@
+{
+  "button": {
+    "typo": {
+      "Default": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "500"
+        },
+        "type": "typography"
+      },
+      "Small": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontSize": "10",
+          "lineHeight": "16",
+          "fontWeight": "bold",
+          "textCase": "Uppercase"
+        },
+        "type": "typography"
+      },
+      "Large": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontSize": "18",
+          "lineHeight": "24",
+          "fontWeight": "500"
+        },
+        "type": "typography"
+      },
+      "Huge": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontSize": "24",
+          "lineHeight": "32",
+          "fontWeight": "500"
+        },
+        "type": "typography"
+      }
+    },
+    "fontsize": {
+      "button": {
+        "huge": {
+          "value": "12",
+          "type": "fontSizes"
+        }
+      }
+    },
+    "sizing": {
+      "small": {
+        "value": "{global.sizing.32}",
+        "type": "sizing"
+      },
+      "default": {
+        "value": "{global.sizing.40}",
+        "type": "sizing"
+      },
+      "large": {
+        "value": "{global.sizing.48}",
+        "type": "sizing"
+      },
+      "xlarge": {
+        "value": "{global.sizing.64}",
+        "type": "sizing"
+      }
+    },
+    "radii": {
+      "default": {
+        "value": "2",
+        "type": "borderRadius"
+      },
+      "large": {
+        "value": "3",
+        "type": "borderRadius"
+      },
+      "xl": {
+        "value": "5",
+        "type": "borderRadius"
+      }
+    },
+    "border": {
+      "small": {
+        "value": "1",
+        "type": "borderWidth"
+      },
+      "large": {
+        "value": "2",
+        "type": "borderWidth"
+      },
+      "xlarge": {
+        "value": "3",
+        "type": "borderWidth"
+      }
+    },
+    "color": {
+      "default": {
+        "value": "{global.color.Lightpurple.700}",
+        "type": "color"
+      },
+      "hover": {
+        "default": {
+          "value": "{global.color.Lightpurple.1000}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

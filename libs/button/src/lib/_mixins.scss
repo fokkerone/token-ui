@@ -1,0 +1,78 @@
+@mixin btn-border-drawing(
+    $color: #ccc,
+    $hover: black,
+    $width: 2px,
+    $vertical: top,
+    $horizontal: left,
+    $duration: 0.25s
+) {
+    //box-shadow: inset 0 0 0 $width $color;
+    color: $color;
+    transition: color $duration $duration/3;
+    //position: relative;
+    border-width: 2px;
+    &::before,
+    &::after {
+        border: 0 solid transparent;
+        box-sizing: content-box;
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-radius: 5px;
+        #{$vertical}: -2px;
+        #{$horizontal}: -2px;
+    }
+
+    &::before {
+        $h-side: if($horizontal == "left", "right", "left");
+        border-#{$vertical}-width: $width;
+        border-#{$h-side}-width: $width;
+    }
+
+    &::after {
+        $v-side: if($vertical == "top", "bottom", "top");
+        border-#{$v-side}-width: $width;
+        border-#{$horizontal}-width: $width;
+    }
+
+    &:hover,
+    &:focus {
+        color: $hover;
+        &::before,
+        &::after {
+            border-color: $hover;
+            transition: border-color 0s, width $duration, height $duration;
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+        }
+
+        &::before {
+            transition-delay: 0s, 0s, $duration;
+        }
+
+        &::after {
+            transition-delay: 0s, $duration, 0s;
+        }
+    }
+}
+
+@mixin gostcolors($color) {
+    color: $color;
+    border-color: $color;
+    //@include btn-border-drawing($color, red); // &:hover,
+
+    &:hover {
+        background: linear-gradient(rgb(110, 143, 146), blue) padding-box,
+            linear-gradient(rgb(211, 248, 211), rgb(237, 0, 40)) border-box;
+    }
+}
+
+@mixin linkcolor($color) {
+    color: $color;
+
+    &:hover {
+        border-bottom-color: $color;
+    }
+}

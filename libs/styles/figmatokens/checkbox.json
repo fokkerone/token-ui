@@ -5,80 +5,84 @@
         "value": "100",
         "type": "borderRadius"
       },
-      "small": {
+      "none": {
+        "value": "0",
+        "type": "borderRadius"
+      },
+      "sm": {
         "value": "1",
         "type": "borderRadius"
       },
-      "medium": {
+      "md": {
         "value": "2",
         "type": "borderRadius"
       },
-      "large": {
+      "lg": {
         "value": "3",
         "type": "borderRadius"
       },
-      "huge": {
+      "hg": {
         "value": "4",
-        "type": "borderRadius"
-      },
-      "none": {
-        "value": "0",
         "type": "borderRadius"
       }
     },
     "small": {
+      "value": "12px",
+      "type": "sizing"
+    },
+    "medium": {
+      "value": "16",
+      "type": "sizing"
+    },
+    "large": {
+      "value": "24",
+      "type": "sizing"
+    },
+    "huge": {
+      "value": "32",
+      "type": "sizing"
+    },
+    "sm": {
       "value": "4",
       "type": "spacing"
     },
-    "medium": {
+    "md": {
       "value": "6",
       "type": "spacing"
     },
-    "large": {
+    "lg": {
       "value": "8",
       "type": "spacing"
     },
-    "spacing": {
-      "huge": {
-        "value": "10",
-        "type": "spacing"
-      }
-    },
-    "borderwidth": {
-      "small": {
-        "value": "1",
-        "type": "borderWidth"
-      },
-      "medium": {
-        "value": "1",
-        "type": "borderWidth"
-      },
-      "large": {
-        "value": "2",
-        "type": "borderWidth"
-      },
-      "huge": {
-        "value": "3",
-        "type": "borderWidth"
-      }
-    },
-    "size": {
-      "small": {
-        "value": "12",
-        "type": "sizing"
-      },
-      "medium": {
-        "value": "16",
-        "type": "sizing"
-      },
-      "large": {
-        "value": "24",
-        "type": "sizing"
-      },
-      "huge": {
-        "value": "32",
-        "type": "sizing"
-      }
+    "hg": {
+      "value": "12",
+      "type": "spacing"
     }
+  },
+  "borderwidth": {
+    "sm": {
+      "value": "1",
+      "type": "borderWidth"
+    },
+    "md": {
+      "value": "1",
+      "type": "borderWidth"
+    },
+    "lg": {
+      "value": "2",
+      "type": "borderWidth"
+    },
+    "hg": {
+      "value": "3",
+      "type": "borderWidth"
+    }
+  },
+  "active": {
+    "value": "#3cffb5",
+    "type": "color"
+  },
+  "disabled": {
+    "value": "rgba(35,119,152,0.48)",
+    "type": "color"
   }
 }

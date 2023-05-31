@@ -9,7 +9,18 @@ export interface ButtonProps {
     className?: string;
     size: default_sizes;
     type?: 'ghost' | 'link' | undefined;
-    color?: 'primary' | 'secondary' | 'warning' | 'error' | 'success' | null;
+    color?:
+        | 'primary'
+        | 'secondary'
+        | 'warning'
+        | 'error'
+        | 'success'
+        | 'info'
+        | undefined;
+}
+
+export interface AffixProps {
+    children: React.ReactNode;
 }
 
 export const Root = ({
@@ -24,7 +35,6 @@ export const Root = ({
         <button
             className={classNames(
                 styles['root'],
-
                 {
                     [styles[`size-${size}`]]: size || styles[`size-default`],
                     [styles[`${type}`]]: type,

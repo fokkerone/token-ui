@@ -1,4 +1,4 @@
-<!-- Label.stories.mdx -->
+{/* Label.stories.mdx */}
 
 import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs';
 
@@ -27,8 +27,34 @@ import * as Button from './button';
 
 export const Template = (args) => (
     <Button.Root size={args.size} {...args}>
-        Mööp
+        {args.children} Button
     </Button.Root>
+);
+
+export const SizeTemplate = (args) => (
+    <div style={{ gap: '1rem', display: 'flex', flexWrap: 'wrap' }}>
+        <Button.Root {...args} color="default">
+            default
+        </Button.Root>
+        <Button.Root {...args} color="secondary">
+            Secondary
+        </Button.Root>
+        <Button.Root {...args} color="tertiary">
+            Tertiary
+        </Button.Root>
+        <Button.Root {...args} color="error">
+            Error
+        </Button.Root>
+        <Button.Root {...args} color="warn">
+            Warning
+        </Button.Root>
+        <Button.Root {...args} color="info">
+            Information
+        </Button.Root>
+        <Button.Root {...args} color="success">
+            Success
+        </Button.Root>
+    </div>
 );
 
 # Label
@@ -47,5 +73,13 @@ With `MDX`, we can define a story for `Label` right in the middle of our Markdow
         }}
     >
         {Template.bind({})}
+    </Story>
+    <Story
+        name="All Colors"
+        args={{
+            size: 'large',
+        }}
+    >
+        {SizeTemplate.bind({})}
     </Story>
 </Canvas>

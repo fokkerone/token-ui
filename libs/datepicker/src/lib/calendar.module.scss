@@ -1,0 +1,69 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.Root {
+    // max-width: 50%;
+}
+
+.Day {
+    all: unset;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    border: 1px solid black;
+    border-radius: 0.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+        background-color: red;
+    }
+}
+
+.Today {
+    background-color: #f0f;
+}
+
+.Days {
+    gap: 0.25rem;
+
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.DayActive {
+    background-color: #0ff;
+}
+
+.Header {
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    align-items: center;
+    align-content: center;
+    user-select: none;
+
+    button {
+        all: unset;
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+            background-color: #0ff;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 0.875rem;
+    }
+}

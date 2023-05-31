@@ -6,16 +6,20 @@
  * }
 */
 @import "../../../styles/mixins/index";
+@import "../../../styles/src/tokens/variables";
+@import "./mixins";
 
-@mixin gostcolors($color) {
-  color: $color;
-  border-color: $color;
-  &:hover {
-    background-color: $color;
-    color: white;
-  }
+@mixin size($height, $px, $py, $radius) {
+  height: $height;
+  max-height: $height;
+  @include py($py);
+  @include px($px);
+  border-radius: $radius;
 }
+
 .root {
+  @extend %button;
+
   // Reset
   all: unset;
   align-items: center;
@@ -30,14 +34,24 @@
   line-height: 1;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-  background-color: var(--global-color-lightpurple-800);
-  border-color: var(--global-color-lightpurple-800);
   color: white;
 
   font-family: var(--global-fontfamily-sans);
   font-weight: 500;
   font-variant-numeric: tabular-nums;
   cursor: pointer;
+
+  // Default Button Style
+  background-color: var(--button-color-default);
+  border-color: var(--button-color-default);
+
+  &:hover {
+    background-color: var(--button-color-hover-default);
+  }
+
+  &:focus {
+    //outline: 2px solid change(#6b717f, $red: 100);
+  }
 
   // :before {
   //   box-sizing: border-box;
@@ -68,34 +82,42 @@
   //   z-index: -1;
   // }
 
-  &:focus-within {
-    &:before,
-    &:after {
-      border-color: transparent;
-      filter: blur(6px);
-      transform: scale(2.4);
-      transition: 700ms transform ease, 600ms blur ease, 900ms border-color ease;
-    }
-    &:after {
-      transition-delay: 100ms;
-    }
-  }
+  // &:focus-within {
+  //   &:before,
+  //   &:after {
+  //     border-color: transparent;
+  //     filter: blur(6px);
+  //     transform: scale(2.4);
+  //     transition: 700ms transform ease, 600ms blur ease, 900ms border-color ease;
+  //   }
+  //   &:after {
+  //     transition-delay: 100ms;
+  //   }
+  // }
 }
 
 // ----------------------------------------------------------------
 // Sizes
 .size-default {
-  @include py(var(--global-spacing-12));
-  @include px(var(--global-spacing-16));
-  border-radius: var(--global-radii-sm);
+  @include size(
+    var(--button-sizing-default),
+    var(--global-spacing-16),
+    var(--global-spacing-12),
+    var(--button-radii-default)
+  );
+
   font-size: 0.875rem;
   line-height: 1.1428571429;
 }
 
 .size-small {
-  @include py(var(--global-spacing-8));
-  @include px(var(--global-spacing-12));
-  border-radius: var(--global-radii-sm);
+  @include size(
+    var(--button-sizing-small),
+    var(--global-spacing-12),
+    var(--global-spacing-8),
+    var(--button-radii-default)
+  );
+
   line-height: 1.6;
   letter-spacing: 0.09rem;
   font-size: 0.625rem;
@@ -103,47 +125,69 @@
 }
 
 .size-large {
-  @include py(var(--global-spacing-12));
-  @include px(var(--global-spacing-24));
+  @include size(
+    var(--button-sizing-large),
+    var(--global-spacing-24),
+    var(--global-spacing-12),
+    var(--button-radii-large)
+  );
+
   font-size: 1.125rem;
   line-height: 1.3333333333;
   font-weight: 500;
-  border-radius: var(--global-radii-md);
 }
 
 .size-xlarge {
-  padding: 1rem 2rem 1rem 2rem;
+  @include size(
+    var(--button-sizing-xlarge),
+    var(--global-spacing-32),
+    var(--global-spacing-16),
+    var(--button-radii-xl)
+  );
+
   font-size: 1.5rem;
   line-height: 1.3333333333;
   font-weight: 600;
-  border-radius: var(--global-radii-lg);
 }
 
 // ----------------------------------------------------------------
 // Colors
 
 .secondary {
-  background-color: rgb(255, 16, 247);
+  background-color: var(--global-color-semantic-second);
+}
+
+.tertiary {
+  background-color: var(--global-color-semantic-third);
+}
+
+.warn {
+  background-color: var(--global-color-semantic-warn);
 }
 
 .error {
-  background-color: var(--global-color-teal-600);
+  background-color: var(--global-color-semantic-error);
 }
 
 .success {
-  background-color: var(--global-color-shamrockgreen500);
+  background-color: var(--global-color-semantic-success);
+}
+
+.info {
+  background-color: var(--global-color-semantic-info);
 }
 
 .ghost {
   color: var(--global-color-lightpurple-800);
-
-  border-width: 1px;
+  //border-width: 1px;
   background-color: transparent;
   border-style: solid;
+  transition: 0.49s;
 
-  &:hover {
-    background-color: var(--global-color-lightpurple-800);
+  &:hover,
+  &:focus {
     color: white;
+    //box-shadow: inset 0 0 0 2em var(--global-color-lightpurple-800);
   }
 
   &.size-small {
@@ -151,7 +195,7 @@
   }
 
   &.size-large {
-    border-width: 2px;
+    // border-width: 2px;
   }
 
   &.size-xlarge {
@@ -159,20 +203,29 @@
     border-width: 3px;
   }
 
+  // GHOST COLORS
   &.error {
-    color: var(--global-color-teal-600);
-    &:hover {
-      background-color: var(--global-color-teal-600);
-      color: white;
-    }
+    // @include gostcolors(var(--global-color-semantic-error));
   }
 
   &.success {
-    @include gostcolors(var(--global-color-shamrockgreen500));
+    // @include gostcolors(var(--global-color-shamrockgreen500));
   }
 
-  &.warning {
-    @include gostcolors(orange);
+  &.secondary {
+    //  @include gostcolors(var(--global-color-semantic-second));
+  }
+
+  &.tertiary {
+    @include gostcolors(var(--global-color-semantic-third));
+  }
+
+  &.info {
+    // @include gostcolors(var(--global-color-semantic-info));
+  }
+
+  &.warn {
+    // @include gostcolors(var(--global-color-semantic-warn));
   }
 }
 
@@ -180,18 +233,25 @@
   background-color: transparent;
   border-radius: 0;
   border-bottom: 2px solid transparent;
+  @include linkcolor(var(--global-color-semantic-default));
   &.success {
-    color: var(--global-color-shamrockgreen500);
-
-    &:hover {
-      border-bottom-color: var(--global-color-shamrockgreen500);
-    }
+    @include linkcolor(var(--global-color-semantic-success));
   }
-  &.warning {
-    color: orange;
+  &.warn {
+    @include linkcolor(var(--global-color-semantic-warn));
+  }
 
-    &:hover {
-      border-bottom-color: orange;
-    }
+  &.info {
+    @include linkcolor(var(--global-color-semantic-info));
+  }
+  &.error {
+    @include linkcolor(var(--global-color-semantic-error));
+  }
+
+  &.secondary {
+    @include linkcolor(var(--global-color-semantic-second));
+  }
+  &.tertiary {
+    @include linkcolor(var(--global-color-semantic-third));
   }
 }
