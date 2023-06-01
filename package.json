@@ -12,7 +12,8 @@
         "token:transform": "node ./libs/styles/utils/tokentransform.js",
         "buildtokens": "style-dictionary build --config libs/styles/utils/sd.config.js",
         "icons": "npx pixo-tsx ./libs/icons/svgs --out-dir ./libs/icons/src/icons --template ./libs/icons/src/template.js && node ./libs/icons/src/exportTempl.js",
-        "icons:build": "npx pixo-tsx ./libs/icons/svgs --out-dir ./libs/icons/src/icons --template ./libs/icons/src/template.js"
+        "icons:build": "npx pixo-tsx ./libs/icons/svgs --out-dir ./libs/icons/src/icons --template ./libs/icons/src/template.js",
+        "cypress:imageupdate": "npx cypress-image-diff -u"
     },
     "private": true,
     "dependencies": {
@@ -89,7 +90,8 @@
         "babel-jest": "28.1.1",
         "babel-loader": "8.1.0",
         "css-loader": "^6.4.0",
-        "cypress": "^11.0.0",
+        "cypress": "^12.13.0",
+        "cypress-image-diff-js": "^1.24.0",
         "eslint": "~8.15.0",
         "eslint-config-next": "13.0.0",
         "eslint-config-prettier": "8.1.0",

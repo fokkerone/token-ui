@@ -24,7 +24,7 @@ type Story = StoryObj<typeof Button>;
 export const Primary: Story = {
     render: () => (
         <div>
-            <Button size="default">Hello</Button>
+            <Button size="default">Hello World</Button>
         </div>
     ),
 };
