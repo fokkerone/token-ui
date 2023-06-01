@@ -15,8 +15,8 @@ import {
     useCalendars,
 } from '@rehookify/datepicker';
 
-const DatePicker = ({ time, ...props }) => {
-    const [selectedDates, onDatesChange] = useState<Date[]>([time]);
+const DatePicker = ({ time = '2020-20-12', ...props }) => {
+    const [selectedDates, onDatesChange] = useState<Date[]>([]);
     const {
         // data: { calendars, weekDays, formattedDates, months, years },
         propGetters: {

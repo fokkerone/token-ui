@@ -13,8 +13,30 @@
 //     //     /* Safari, Android, iOS */ url("/fonts/inter.svg#Inter") format("svg"); /* Legacy iOS */
 // }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
+body {
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    line-height: 1.58;
+    letter-spacing: -0.003em;
+    font-size: 20px;
+    padding: 70px;
+}
 
 :root {
-    @extend %global;
+    @extend %global; //Global Tokens
+
+    //     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+    //     font-family: "Inter";
+    //     font-weight: normal;
+
+    // @font-face {
+    //     font-family: "Inter";
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     src: url("./fonts/inter.ttf") format("truetype");
+    // }
 }
