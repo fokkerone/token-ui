@@ -6,4 +6,13 @@ describe('Button Component', () => {
         cy.get('#storybook-root').compareSnapshot('button-primary');
         //cy.compareSnapshot('home-page');
     });
+
+    it('should compare screenshot of the entire page  ghost', () => {
+        cy.visit(
+            'http://localhost:4400/iframe.html?args=size:large;color:primary;type:ghost&id=button--primary&viewMode=story'
+        );
+        cy.wait(1200);
+
+        cy.compareSnapshot('home-page');
+    });
 });

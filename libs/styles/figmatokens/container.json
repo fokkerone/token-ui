@@ -1,26 +1,26 @@
 {
-  "container": {
-    "breakpoints": {
-      "sm": {
-        "value": "700",
-        "type": "other"
-      },
-      "md": {
-        "value": "960",
-        "type": "other"
-      },
-      "lg": {
-        "value": "1140",
-        "type": "other"
-      },
-      "xl": {
-        "value": "1320",
-        "type": "other"
-      },
-      "huge": {
-        "value": "1520",
-        "type": "other"
-      }
+    "container": {
+        "breakpoints": {
+            "sm": {
+                "value": "700",
+                "type": "other"
+            },
+            "md": {
+                "value": "960",
+                "type": "other"
+            },
+            "lg": {
+                "value": "1140",
+                "type": "other"
+            },
+            "xl": {
+                "value": "1320",
+                "type": "other"
+            },
+            "huge": {
+                "value": "1520",
+                "type": "other"
+            }
+        }
     }
-  }
 }

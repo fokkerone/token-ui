@@ -17,3 +17,5 @@ export const Button: FC<ButtonProps> = ({ className, children, ...props }) => {
         </button>
     );
 };
+
+export default Button;

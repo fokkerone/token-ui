@@ -52,4 +52,4 @@ export const ButtonAffix = (props: AffixProps) => {
     return <span>Affix</span>;
 };
 
-//export default Button;
+export default Root;
